@@ -1,0 +1,41 @@
+Backend: Quartus
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    dense_4:
+      Precision:
+        bias: ap_fixed<8,1>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,1>
+      ReuseFactor: 1
+    dense_4_input:
+      Precision:
+        result: ap_fixed<16,6>
+    dense_4_relu:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 1
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    dense_5:
+      Precision:
+        bias: ap_fixed<8,1>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<8,1>
+      ReuseFactor: 1
+    dense_5_sigmoid:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 1
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+  Model:
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+IOType: io_parallel
+InputData: null
+KerasModel: !keras_model 'models/hls_models/keras_model.h5'
+OutputDir: models/hls_models
+OutputPredictions: null
+Part: 1SG280HU2F50E2VG
+ProjectName: myproject
+Stamp: d3DFbC4A

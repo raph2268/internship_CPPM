@@ -97,7 +97,7 @@ int main(int argc, char **argv)
       std::vector<float>::const_iterator in_end;
       inputs.emplace_back();
       in_end = in_begin + (N_INPUT_1_1*N_INPUT_2_1);
-      std::copy(in_begin, in_end, inputs.back().simple_rnn_input);
+      std::copy(in_begin, in_end, inputs.back().SimpleRNN_input);
       in_begin = in_end;
       outputs.emplace_back();
       predictions.push_back(std::move(pr));
@@ -146,7 +146,7 @@ int main(int argc, char **argv)
     for(int i = 0; i < num_iterations; i++) {
       inputs.emplace_back();
       outputs.emplace_back();
-      std::fill_n(inputs[i].simple_rnn_input, N_INPUT_1_1*N_INPUT_2_1, 0.0);
+      std::fill_n(inputs[i].SimpleRNN_input, N_INPUT_1_1*N_INPUT_2_1, 0.0);
     }
 
     //hls-fpga-machine-learning insert top-level-function

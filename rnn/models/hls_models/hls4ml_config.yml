@@ -2,25 +2,25 @@ Backend: Quartus
 ClockPeriod: 5
 HLSConfig:
   LayerName:
-    dense:
+    SimpleRNN:
       Precision:
-        bias: ap_fixed<4,4>
+        bias: ap_fixed<6,4>
+        weight: ap_fixed<6,4>
+    SimpleRNN_input:
+      Precision:
         result: ap_fixed<16,6>
-        weight: ap_fixed<4,4>
-      ReuseFactor: 1
-    dense_relu:
+    SimpleRNN_tanh:
       Precision: ap_fixed<16,6>
       ReuseFactor: 1
       table_size: 1024
       table_t: ap_fixed<18,8>
-    simple_rnn:
+    dense:
       Precision:
-        bias: ap_fixed<4,4>
-        weight: ap_fixed<4,4>
-    simple_rnn_input:
-      Precision:
+        bias: ap_fixed<6,4>
         result: ap_fixed<16,6>
-    simple_rnn_relu:
+        weight: ap_fixed<6,4>
+      ReuseFactor: 1
+    dense_relu:
       Precision: ap_fixed<16,6>
       ReuseFactor: 1
       table_size: 1024
@@ -36,4 +36,4 @@ OutputDir: models/hls_models
 OutputPredictions: null
 Part: 1SG280HU2F50E2VG
 ProjectName: myproject
-Stamp: 741C1cfA
+Stamp: 8B8E8bbf

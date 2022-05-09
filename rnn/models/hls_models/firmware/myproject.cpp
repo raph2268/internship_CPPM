@@ -49,7 +49,7 @@ component output_data myproject(
     //hls-fpga-machine-learning insert layers
 
     layer2_t layer2_out[OUT_HEIGHT_2];
-    simple_rnn_network<input_t, layer2_t, config2 ,input_t>(inputs.simple_rnn_input, layer2_out, kernel_2,recurrent_kernel_2,bias_2);
+    simple_rnn_network<input_t, layer2_t, config2 ,input_t>(inputs.SimpleRNN_input, layer2_out, kernel_2,recurrent_kernel_2,bias_2);
 
     layer3_t layer3_out[N_LAYER_3];
     nnet::dense_resource<layer2_t, layer3_t, config3>(layer2_out, layer3_out, w3, b3);

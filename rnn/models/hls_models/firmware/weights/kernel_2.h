@@ -1,6 +1,6 @@
 //Numpy array shape [8]
-//Min -1.453368544579
-//Max 1.724148988724
+//Min -0.754344940186
+//Max 0.658832907677
 //Number of zeros 0
 
 #ifndef KERNEL_2_H_
@@ -9,6 +9,6 @@
 #ifdef __INTELFPGA_COMPILER__
 hls_init_on_powerup
 #endif
-static const simple_rnn_weight_t kernel_2[8] = {-1.45, -0.26, 1.15, 1.65, 0.54, 0.71, 1.72, 0.55};
+static const simplernn_weight_t kernel_2[8] = {-0.47, -0.26, -0.63, 0.66, 0.34, -0.75, -0.63, 0.49};
 
 #endif

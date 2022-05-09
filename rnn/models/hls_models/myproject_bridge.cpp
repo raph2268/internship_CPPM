@@ -47,14 +47,14 @@ void collect_trace_output(struct trace_data *c_trace_outputs) {
 
 // Wrapper of top level function for Python bridge
 void myproject_float(
-    float simple_rnn_input[N_INPUT_1_1*N_INPUT_2_1],
+    float SimpleRNN_input[N_INPUT_1_1*N_INPUT_2_1],
     float layer4_out[N_LAYER_3],
     unsigned short &const_size_in_1,
     unsigned short &const_size_out_1
 ) {
     
     input_data inputs_ap;
-    nnet::convert_data<float, input_t, N_INPUT_1_1*N_INPUT_2_1>(simple_rnn_input, inputs_ap.simple_rnn_input);
+    nnet::convert_data<float, input_t, N_INPUT_1_1*N_INPUT_2_1>(SimpleRNN_input, inputs_ap.SimpleRNN_input);
 
     output_data outputs_ap;
     outputs_ap = myproject(inputs_ap);
@@ -63,13 +63,13 @@ void myproject_float(
 }
 
 void myproject_double(
-    double simple_rnn_input[N_INPUT_1_1*N_INPUT_2_1],
+    double SimpleRNN_input[N_INPUT_1_1*N_INPUT_2_1],
     double layer4_out[N_LAYER_3],
     unsigned short &const_size_in_1,
     unsigned short &const_size_out_1
 ) {
     input_data inputs_ap;
-    nnet::convert_data<double, input_t, N_INPUT_1_1*N_INPUT_2_1>(simple_rnn_input, inputs_ap.simple_rnn_input);
+    nnet::convert_data<double, input_t, N_INPUT_1_1*N_INPUT_2_1>(SimpleRNN_input, inputs_ap.SimpleRNN_input);
 
     output_data outputs_ap;
     outputs_ap = myproject(inputs_ap);

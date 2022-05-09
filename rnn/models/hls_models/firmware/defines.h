@@ -22,11 +22,11 @@
 typedef ac_fixed<16,6,true> model_default_t;
 typedef ac_fixed<16,6,true> input_t;
 typedef ac_fixed<16,6,true> layer2_t;
-typedef ac_fixed<4,4,true> simple_rnn_weight_t;
-typedef ac_fixed<4,4,true> simple_rnn_bias_t;
+typedef ac_fixed<6,4,true> simplernn_weight_t;
+typedef ac_fixed<6,4,true> simplernn_bias_t;
 typedef ac_fixed<16,6,true> layer3_t;
-typedef ac_fixed<4,4,true> dense_weight_t;
-typedef ac_fixed<4,4,true> dense_bias_t;
+typedef ac_fixed<6,4,true> dense_weight_t;
+typedef ac_fixed<6,4,true> dense_bias_t;
 typedef ac_int<1, false> layer3_index;
 typedef ac_fixed<16,6,true> dense_relu_default_t;
 typedef ac_fixed<18,8,true> dense_relutable_t;

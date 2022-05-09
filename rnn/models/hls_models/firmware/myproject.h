@@ -33,7 +33,7 @@
 #include "parameters.h"
 
 struct input_data {
-    input_t simple_rnn_input[N_INPUT_1_1*N_INPUT_2_1];
+    input_t SimpleRNN_input[N_INPUT_1_1*N_INPUT_2_1];
 };
 
 struct output_data {

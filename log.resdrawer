@@ -1,681 +1,0 @@
-Welcome to resolution drawer ...
-Output target : 20210429_for_CHEP
-
-----------------------------------
-Run comparison for these algorithms: 
- ->  sequence_ofmax_eT  rnn_seq5
-INFO::read_from_tree::Extract ttree from /atlas/bonnet/Desktop/code/internship_CPPM/test_.root
-INFO::read_from_tree::  -> pred_names to get :    sequence_ofmax_eT   rnn_seq5
-[1;36mDEBUG::Remove 1999995
- -> sequence_ofmax_eT=0 : rnn_seq5=-14000[0m
-[1;36mDEBUG::Remove 1999996
- -> sequence_ofmax_eT=0 : rnn_seq5=-14000[0m
-[1;36mDEBUG::Remove 1999997
- -> sequence_ofmax_eT=0 : rnn_seq5=-14000[0m
-[1;36mDEBUG::Remove 1999998
- -> sequence_ofmax_eT=0 : rnn_seq5=-14000[0m
-[1;36mDEBUG::Remove 1999999
- -> sequence_ofmax_eT=0 : rnn_seq5=-14000[0m
-INFO::read_from_tree::Exit
- -> make resolution hists
-[1;36mDEBUG::align_methods::Method sequence_ofmax_eT mu140 : first_bc(index)=1000000(0) ; last_bc(index)=1999988(999988)[0m
-[1;36mDEBUG::align_methods::post-removals method sequence_ofmax_eT mu140 : len(bcid)=999989, first(last) el=1000000(1999988)[0m
-[1;36mDEBUG::align_methods::post-removals method sequence_ofmax_eT mu140 : len(reference)=999989, first(last) el=1.51811(0.147112)[0m
-[1;36mDEBUG::align_methods::post-removals method sequence_ofmax_eT mu140 : len(prediction)=999989, first(last) el=1.51702(0)[0m
-[1;36mDEBUG::align_methods::Method rnn_seq5 mu140 : first_bc(index)=1000000(0) ; last_bc(index)=1999988(999988)[0m
-[1;36mDEBUG::align_methods::Remove last 7 els[0m
-[1;36mDEBUG::align_methods::post-removals method rnn_seq5 mu140 : len(bcid)=999989, first(last) el=1000000(1999988)[0m
-[1;36mDEBUG::align_methods::post-removals method rnn_seq5 mu140 : len(reference)=999989, first(last) el=1.51811(0.147112)[0m
-[1;36mDEBUG::align_methods::post-removals method rnn_seq5 mu140 : len(prediction)=999989, first(last) el=1.56332(0.025447)[0m
-Add method :: sequence_ofmax_eT
-Add method :: rnn_seq5
-
-[1;36mDEBUG::make_all_histograms::Histo ranges -----------------------
-mu140 :
-  -> All energies : min = -4.14528  &  max = 5.19363
-  -> No deposit E=0 : min = -0.06  &  max = 1.54527
-  -> 0 MeV #leq E < 240 MeV : min = -0.239999  &  max = 5.19363
-  -> E #geq 240 MeV : min = -4.14528  &  max = 1.18776
-  -> E #geq 1 GeV : min = -4.14528  &  max = 1.18776
-[0m
-Build HistoHolder : name=sequence_ofmax_eT; trigger=None
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_None_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_None_mu140 (Potential memory leak).
-Build HistoHolder : name=rnn_seq5; trigger=None
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_None_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_None_mu140 (Potential memory leak).
-Build HistoHolder : name=sequence_ofmax_eT; trigger=sequence_ofmax_eT_isZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_sequence_ofmax_eT_isZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_sequence_ofmax_eT_isZero_mu140 (Potential memory leak).
-Build HistoHolder : name=rnn_seq5; trigger=sequence_ofmax_eT_isZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_sequence_ofmax_eT_isZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_sequence_ofmax_eT_isZero_mu140 (Potential memory leak).
-Build HistoHolder : name=sequence_ofmax_eT; trigger=sequence_ofmax_eT_isNonZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_sequence_ofmax_eT_isNonZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_sequence_ofmax_eT_isNonZero_mu140 (Potential memory leak).
-Build HistoHolder : name=rnn_seq5; trigger=sequence_ofmax_eT_isNonZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_sequence_ofmax_eT_isNonZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_sequence_ofmax_eT_isNonZero_mu140 (Potential memory leak).
-Build HistoHolder : name=sequence_ofmax_eT; trigger=rnn_seq5_isZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_rnn_seq5_isZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_rnn_seq5_isZero_mu140 (Potential memory leak).
-Build HistoHolder : name=rnn_seq5; trigger=rnn_seq5_isZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_rnn_seq5_isZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_rnn_seq5_isZero_mu140 (Potential memory leak).
-Build HistoHolder : name=sequence_ofmax_eT; trigger=rnn_seq5_isNonZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_rnn_seq5_isNonZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_rnn_seq5_isNonZero_mu140 (Potential memory leak).
-Build HistoHolder : name=rnn_seq5; trigger=rnn_seq5_isNonZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_rnn_seq5_isNonZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_rnn_seq5_isNonZero_mu140 (Potential memory leak).
-Build HistoHolder : name=sequence_ofmax_eT; trigger=AllNonZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_AllNonZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_sequence_ofmax_eT_AllNonZero_mu140 (Potential memory leak).
-Build HistoHolder : name=rnn_seq5; trigger=AllNonZero
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_AllNonZero_mu140 (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: resolutionVSgap_erng_rnn_seq5_AllNonZero_mu140 (Potential memory leak).
-hmaker evt count : 0hmaker evt count : 1000hmaker evt count : 2000hmaker evt count : 3000hmaker evt count : 4000hmaker evt count : 5000hmaker evt count : 6000hmaker evt count : 7000hmaker evt count : 8000hmaker evt count : 9000hmaker evt count : 10000hmaker evt count : 11000hmaker evt count : 12000hmaker evt count : 13000hmaker evt count : 14000hmaker evt count : 15000hmaker evt count : 16000hmaker evt count : 17000hmaker evt count : 18000hmaker evt count : 19000hmaker evt count : 20000hmaker evt count : 21000hmaker evt count : 22000hmaker evt count : 23000hmaker evt count : 24000hmaker evt count : 25000hmaker evt count : 26000hmaker evt count : 27000hmaker evt count : 28000hmaker evt count : 29000hmaker evt count : 30000hmaker evt count : 31000hmaker evt count : 32000hmaker evt count : 33000hmaker evt count : 34000hmaker evt count : 35000hmaker evt count : 36000hmaker evt count : 37000hmaker evt count : 38000hmaker evt count : 39000hmaker evt count : 40000hmaker evt count : 41000hmaker evt count : 42000hmaker evt count : 43000hmaker evt count : 44000hmaker evt count : 45000hmaker evt count : 46000hmaker evt count : 47000hmaker evt count : 48000hmaker evt count : 49000hmaker evt count : 50000hmaker evt count : 51000hmaker evt count : 52000hmaker evt count : 53000hmaker evt count : 54000hmaker evt count : 55000hmaker evt count : 56000hmaker evt count : 57000hmaker evt count : 58000hmaker evt count : 59000hmaker evt count : 60000hmaker evt count : 61000hmaker evt count : 62000hmaker evt count : 63000hmaker evt count : 64000hmaker evt count : 65000hmaker evt count : 66000hmaker evt count : 67000hmaker evt count : 68000hmaker evt count : 69000hmaker evt count : 70000hmaker evt count : 71000hmaker evt count : 72000hmaker evt count : 73000hmaker evt count : 74000hmaker evt count : 75000hmaker evt count : 76000hmaker evt count : 77000hmaker evt count : 78000hmaker evt count : 79000hmaker evt count : 80000hmaker evt count : 81000hmaker evt count : 82000hmaker evt count : 83000hmaker evt count : 84000hmaker evt count : 85000hmaker evt count : 86000hmaker evt count : 87000hmaker evt count : 88000hmaker evt count : 89000hmaker evt count : 90000hmaker evt count : 91000hmaker evt count : 92000hmaker evt count : 93000hmaker evt count : 94000hmaker evt count : 95000hmaker evt count : 96000hmaker evt count : 97000hmaker evt count : 98000hmaker evt count : 99000hmaker evt count : 100000hmaker evt count : 101000hmaker evt count : 102000hmaker evt count : 103000hmaker evt count : 104000hmaker evt count : 105000hmaker evt count : 106000hmaker evt count : 107000hmaker evt count : 108000hmaker evt count : 109000hmaker evt count : 110000hmaker evt count : 111000hmaker evt count : 112000hmaker evt count : 113000hmaker evt count : 114000hmaker evt count : 115000hmaker evt count : 116000hmaker evt count : 117000hmaker evt count : 118000hmaker evt count : 119000hmaker evt count : 120000hmaker evt count : 121000hmaker evt count : 122000hmaker evt count : 123000hmaker evt count : 124000hmaker evt count : 125000hmaker evt count : 126000hmaker evt count : 127000hmaker evt count : 128000hmaker evt count : 129000hmaker evt count : 130000hmaker evt count : 131000hmaker evt count : 132000hmaker evt count : 133000hmaker evt count : 134000hmaker evt count : 135000hmaker evt count : 136000hmaker evt count : 137000hmaker evt count : 138000hmaker evt count : 139000hmaker evt count : 140000hmaker evt count : 141000hmaker evt count : 142000hmaker evt count : 143000hmaker evt count : 144000hmaker evt count : 145000hmaker evt count : 146000hmaker evt count : 147000hmaker evt count : 148000hmaker evt count : 149000hmaker evt count : 150000hmaker evt count : 151000hmaker evt count : 152000hmaker evt count : 153000hmaker evt count : 154000hmaker evt count : 155000hmaker evt count : 156000hmaker evt count : 157000hmaker evt count : 158000hmaker evt count : 159000hmaker evt count : 160000hmaker evt count : 161000hmaker evt count : 162000hmaker evt count : 163000hmaker evt count : 164000hmaker evt count : 165000hmaker evt count : 166000hmaker evt count : 167000hmaker evt count : 168000hmaker evt count : 169000hmaker evt count : 170000hmaker evt count : 171000hmaker evt count : 172000hmaker evt count : 173000hmaker evt count : 174000hmaker evt count : 175000hmaker evt count : 176000hmaker evt count : 177000hmaker evt count : 178000hmaker evt count : 179000hmaker evt count : 180000hmaker evt count : 181000hmaker evt count : 182000hmaker evt count : 183000hmaker evt count : 184000hmaker evt count : 185000hmaker evt count : 186000hmaker evt count : 187000hmaker evt count : 188000hmaker evt count : 189000hmaker evt count : 190000hmaker evt count : 191000hmaker evt count : 192000hmaker evt count : 193000hmaker evt count : 194000hmaker evt count : 195000hmaker evt count : 196000hmaker evt count : 197000hmaker evt count : 198000hmaker evt count : 199000hmaker evt count : 200000hmaker evt count : 201000hmaker evt count : 202000hmaker evt count : 203000hmaker evt count : 204000hmaker evt count : 205000hmaker evt count : 206000hmaker evt count : 207000hmaker evt count : 208000hmaker evt count : 209000hmaker evt count : 210000hmaker evt count : 211000hmaker evt count : 212000hmaker evt count : 213000hmaker evt count : 214000hmaker evt count : 215000hmaker evt count : 216000hmaker evt count : 217000hmaker evt count : 218000hmaker evt count : 219000hmaker evt count : 220000hmaker evt count : 221000hmaker evt count : 222000hmaker evt count : 223000hmaker evt count : 224000hmaker evt count : 225000hmaker evt count : 226000hmaker evt count : 227000hmaker evt count : 228000hmaker evt count : 229000hmaker evt count : 230000hmaker evt count : 231000hmaker evt count : 232000hmaker evt count : 233000hmaker evt count : 234000hmaker evt count : 235000hmaker evt count : 236000hmaker evt count : 237000hmaker evt count : 238000hmaker evt count : 239000hmaker evt count : 240000hmaker evt count : 241000hmaker evt count : 242000hmaker evt count : 243000hmaker evt count : 244000hmaker evt count : 245000hmaker evt count : 246000hmaker evt count : 247000hmaker evt count : 248000hmaker evt count : 249000hmaker evt count : 250000hmaker evt count : 251000hmaker evt count : 252000hmaker evt count : 253000hmaker evt count : 254000hmaker evt count : 255000hmaker evt count : 256000hmaker evt count : 257000hmaker evt count : 258000hmaker evt count : 259000hmaker evt count : 260000hmaker evt count : 261000hmaker evt count : 262000hmaker evt count : 263000hmaker evt count : 264000hmaker evt count : 265000hmaker evt count : 266000hmaker evt count : 267000hmaker evt count : 268000hmaker evt count : 269000hmaker evt count : 270000hmaker evt count : 271000hmaker evt count : 272000hmaker evt count : 273000hmaker evt count : 274000hmaker evt count : 275000hmaker evt count : 276000hmaker evt count : 277000hmaker evt count : 278000hmaker evt count : 279000hmaker evt count : 280000hmaker evt count : 281000hmaker evt count : 282000hmaker evt count : 283000hmaker evt count : 284000hmaker evt count : 285000hmaker evt count : 286000hmaker evt count : 287000hmaker evt count : 288000hmaker evt count : 289000hmaker evt count : 290000hmaker evt count : 291000hmaker evt count : 292000hmaker evt count : 293000hmaker evt count : 294000hmaker evt count : 295000hmaker evt count : 296000hmaker evt count : 297000hmaker evt count : 298000hmaker evt count : 299000hmaker evt count : 300000hmaker evt count : 301000hmaker evt count : 302000hmaker evt count : 303000hmaker evt count : 304000hmaker evt count : 305000hmaker evt count : 306000hmaker evt count : 307000hmaker evt count : 308000hmaker evt count : 309000hmaker evt count : 310000hmaker evt count : 311000hmaker evt count : 312000hmaker evt count : 313000hmaker evt count : 314000hmaker evt count : 315000hmaker evt count : 316000hmaker evt count : 317000hmaker evt count : 318000hmaker evt count : 319000hmaker evt count : 320000hmaker evt count : 321000hmaker evt count : 322000hmaker evt count : 323000hmaker evt count : 324000hmaker evt count : 325000hmaker evt count : 326000hmaker evt count : 327000hmaker evt count : 328000hmaker evt count : 329000hmaker evt count : 330000hmaker evt count : 331000hmaker evt count : 332000hmaker evt count : 333000hmaker evt count : 334000hmaker evt count : 335000hmaker evt count : 336000hmaker evt count : 337000hmaker evt count : 338000hmaker evt count : 339000hmaker evt count : 340000hmaker evt count : 341000hmaker evt count : 342000hmaker evt count : 343000hmaker evt count : 344000hmaker evt count : 345000hmaker evt count : 346000hmaker evt count : 347000hmaker evt count : 348000hmaker evt count : 349000hmaker evt count : 350000hmaker evt count : 351000hmaker evt count : 352000hmaker evt count : 353000hmaker evt count : 354000hmaker evt count : 355000hmaker evt count : 356000hmaker evt count : 357000hmaker evt count : 358000hmaker evt count : 359000hmaker evt count : 360000hmaker evt count : 361000hmaker evt count : 362000hmaker evt count : 363000hmaker evt count : 364000hmaker evt count : 365000hmaker evt count : 366000hmaker evt count : 367000hmaker evt count : 368000hmaker evt count : 369000hmaker evt count : 370000hmaker evt count : 371000hmaker evt count : 372000hmaker evt count : 373000hmaker evt count : 374000hmaker evt count : 375000hmaker evt count : 376000hmaker evt count : 377000hmaker evt count : 378000hmaker evt count : 379000hmaker evt count : 380000hmaker evt count : 381000hmaker evt count : 382000hmaker evt count : 383000hmaker evt count : 384000hmaker evt count : 385000hmaker evt count : 386000hmaker evt count : 387000hmaker evt count : 388000hmaker evt count : 389000hmaker evt count : 390000hmaker evt count : 391000hmaker evt count : 392000hmaker evt count : 393000hmaker evt count : 394000hmaker evt count : 395000hmaker evt count : 396000hmaker evt count : 397000hmaker evt count : 398000hmaker evt count : 399000hmaker evt count : 400000hmaker evt count : 401000hmaker evt count : 402000hmaker evt count : 403000hmaker evt count : 404000hmaker evt count : 405000hmaker evt count : 406000hmaker evt count : 407000hmaker evt count : 408000hmaker evt count : 409000hmaker evt count : 410000hmaker evt count : 411000hmaker evt count : 412000hmaker evt count : 413000hmaker evt count : 414000hmaker evt count : 415000hmaker evt count : 416000hmaker evt count : 417000hmaker evt count : 418000hmaker evt count : 419000hmaker evt count : 420000hmaker evt count : 421000hmaker evt count : 422000hmaker evt count : 423000hmaker evt count : 424000hmaker evt count : 425000hmaker evt count : 426000hmaker evt count : 427000hmaker evt count : 428000hmaker evt count : 429000hmaker evt count : 430000hmaker evt count : 431000hmaker evt count : 432000hmaker evt count : 433000hmaker evt count : 434000hmaker evt count : 435000hmaker evt count : 436000hmaker evt count : 437000hmaker evt count : 438000hmaker evt count : 439000hmaker evt count : 440000hmaker evt count : 441000hmaker evt count : 442000hmaker evt count : 443000hmaker evt count : 444000hmaker evt count : 445000hmaker evt count : 446000hmaker evt count : 447000hmaker evt count : 448000hmaker evt count : 449000hmaker evt count : 450000hmaker evt count : 451000hmaker evt count : 452000hmaker evt count : 453000hmaker evt count : 454000hmaker evt count : 455000hmaker evt count : 456000hmaker evt count : 457000hmaker evt count : 458000hmaker evt count : 459000hmaker evt count : 460000hmaker evt count : 461000hmaker evt count : 462000hmaker evt count : 463000hmaker evt count : 464000hmaker evt count : 465000hmaker evt count : 466000hmaker evt count : 467000hmaker evt count : 468000hmaker evt count : 469000hmaker evt count : 470000hmaker evt count : 471000hmaker evt count : 472000hmaker evt count : 473000hmaker evt count : 474000hmaker evt count : 475000hmaker evt count : 476000hmaker evt count : 477000hmaker evt count : 478000hmaker evt count : 479000hmaker evt count : 480000hmaker evt count : 481000hmaker evt count : 482000hmaker evt count : 483000hmaker evt count : 484000hmaker evt count : 485000hmaker evt count : 486000hmaker evt count : 487000hmaker evt count : 488000hmaker evt count : 489000hmaker evt count : 490000hmaker evt count : 491000hmaker evt count : 492000hmaker evt count : 493000hmaker evt count : 494000hmaker evt count : 495000hmaker evt count : 496000hmaker evt count : 497000hmaker evt count : 498000hmaker evt count : 499000hmaker evt count : 500000hmaker evt count : 501000hmaker evt count : 502000hmaker evt count : 503000hmaker evt count : 504000hmaker evt count : 505000hmaker evt count : 506000hmaker evt count : 507000hmaker evt count : 508000hmaker evt count : 509000hmaker evt count : 510000hmaker evt count : 511000hmaker evt count : 512000hmaker evt count : 513000hmaker evt count : 514000hmaker evt count : 515000hmaker evt count : 516000hmaker evt count : 517000hmaker evt count : 518000hmaker evt count : 519000hmaker evt count : 520000hmaker evt count : 521000hmaker evt count : 522000hmaker evt count : 523000hmaker evt count : 524000hmaker evt count : 525000hmaker evt count : 526000hmaker evt count : 527000hmaker evt count : 528000hmaker evt count : 529000hmaker evt count : 530000hmaker evt count : 531000hmaker evt count : 532000hmaker evt count : 533000hmaker evt count : 534000hmaker evt count : 535000hmaker evt count : 536000hmaker evt count : 537000hmaker evt count : 538000hmaker evt count : 539000hmaker evt count : 540000hmaker evt count : 541000hmaker evt count : 542000hmaker evt count : 543000hmaker evt count : 544000hmaker evt count : 545000hmaker evt count : 546000hmaker evt count : 547000hmaker evt count : 548000hmaker evt count : 549000hmaker evt count : 550000hmaker evt count : 551000hmaker evt count : 552000hmaker evt count : 553000hmaker evt count : 554000hmaker evt count : 555000hmaker evt count : 556000hmaker evt count : 557000hmaker evt count : 558000hmaker evt count : 559000hmaker evt count : 560000hmaker evt count : 561000hmaker evt count : 562000hmaker evt count : 563000hmaker evt count : 564000hmaker evt count : 565000hmaker evt count : 566000hmaker evt count : 567000hmaker evt count : 568000hmaker evt count : 569000hmaker evt count : 570000hmaker evt count : 571000hmaker evt count : 572000hmaker evt count : 573000hmaker evt count : 574000hmaker evt count : 575000hmaker evt count : 576000hmaker evt count : 577000hmaker evt count : 578000hmaker evt count : 579000hmaker evt count : 580000hmaker evt count : 581000hmaker evt count : 582000hmaker evt count : 583000hmaker evt count : 584000hmaker evt count : 585000hmaker evt count : 586000hmaker evt count : 587000hmaker evt count : 588000hmaker evt count : 589000hmaker evt count : 590000hmaker evt count : 591000hmaker evt count : 592000hmaker evt count : 593000hmaker evt count : 594000hmaker evt count : 595000hmaker evt count : 596000hmaker evt count : 597000hmaker evt count : 598000hmaker evt count : 599000hmaker evt count : 600000hmaker evt count : 601000hmaker evt count : 602000hmaker evt count : 603000hmaker evt count : 604000hmaker evt count : 605000hmaker evt count : 606000hmaker evt count : 607000hmaker evt count : 608000hmaker evt count : 609000hmaker evt count : 610000hmaker evt count : 611000hmaker evt count : 612000hmaker evt count : 613000hmaker evt count : 614000hmaker evt count : 615000hmaker evt count : 616000hmaker evt count : 617000hmaker evt count : 618000hmaker evt count : 619000hmaker evt count : 620000hmaker evt count : 621000hmaker evt count : 622000hmaker evt count : 623000hmaker evt count : 624000hmaker evt count : 625000hmaker evt count : 626000hmaker evt count : 627000hmaker evt count : 628000hmaker evt count : 629000hmaker evt count : 630000hmaker evt count : 631000hmaker evt count : 632000hmaker evt count : 633000hmaker evt count : 634000hmaker evt count : 635000hmaker evt count : 636000hmaker evt count : 637000hmaker evt count : 638000hmaker evt count : 639000hmaker evt count : 640000hmaker evt count : 641000hmaker evt count : 642000hmaker evt count : 643000hmaker evt count : 644000hmaker evt count : 645000hmaker evt count : 646000hmaker evt count : 647000hmaker evt count : 648000hmaker evt count : 649000hmaker evt count : 650000hmaker evt count : 651000hmaker evt count : 652000hmaker evt count : 653000hmaker evt count : 654000hmaker evt count : 655000hmaker evt count : 656000hmaker evt count : 657000hmaker evt count : 658000hmaker evt count : 659000hmaker evt count : 660000hmaker evt count : 661000hmaker evt count : 662000hmaker evt count : 663000hmaker evt count : 664000hmaker evt count : 665000hmaker evt count : 666000hmaker evt count : 667000hmaker evt count : 668000hmaker evt count : 669000hmaker evt count : 670000hmaker evt count : 671000hmaker evt count : 672000hmaker evt count : 673000hmaker evt count : 674000hmaker evt count : 675000hmaker evt count : 676000hmaker evt count : 677000hmaker evt count : 678000hmaker evt count : 679000hmaker evt count : 680000hmaker evt count : 681000hmaker evt count : 682000hmaker evt count : 683000hmaker evt count : 684000hmaker evt count : 685000hmaker evt count : 686000hmaker evt count : 687000hmaker evt count : 688000hmaker evt count : 689000hmaker evt count : 690000hmaker evt count : 691000hmaker evt count : 692000hmaker evt count : 693000hmaker evt count : 694000hmaker evt count : 695000hmaker evt count : 696000hmaker evt count : 697000hmaker evt count : 698000hmaker evt count : 699000hmaker evt count : 700000hmaker evt count : 701000hmaker evt count : 702000hmaker evt count : 703000hmaker evt count : 704000hmaker evt count : 705000hmaker evt count : 706000hmaker evt count : 707000hmaker evt count : 708000hmaker evt count : 709000hmaker evt count : 710000hmaker evt count : 711000hmaker evt count : 712000hmaker evt count : 713000hmaker evt count : 714000hmaker evt count : 715000hmaker evt count : 716000hmaker evt count : 717000hmaker evt count : 718000hmaker evt count : 719000hmaker evt count : 720000hmaker evt count : 721000hmaker evt count : 722000hmaker evt count : 723000hmaker evt count : 724000hmaker evt count : 725000hmaker evt count : 726000hmaker evt count : 727000hmaker evt count : 728000hmaker evt count : 729000hmaker evt count : 730000hmaker evt count : 731000hmaker evt count : 732000hmaker evt count : 733000hmaker evt count : 734000hmaker evt count : 735000hmaker evt count : 736000hmaker evt count : 737000hmaker evt count : 738000hmaker evt count : 739000hmaker evt count : 740000hmaker evt count : 741000hmaker evt count : 742000hmaker evt count : 743000hmaker evt count : 744000hmaker evt count : 745000hmaker evt count : 746000hmaker evt count : 747000hmaker evt count : 748000hmaker evt count : 749000hmaker evt count : 750000hmaker evt count : 751000hmaker evt count : 752000hmaker evt count : 753000hmaker evt count : 754000hmaker evt count : 755000hmaker evt count : 756000hmaker evt count : 757000hmaker evt count : 758000hmaker evt count : 759000hmaker evt count : 760000hmaker evt count : 761000hmaker evt count : 762000hmaker evt count : 763000hmaker evt count : 764000hmaker evt count : 765000hmaker evt count : 766000hmaker evt count : 767000hmaker evt count : 768000hmaker evt count : 769000hmaker evt count : 770000hmaker evt count : 771000hmaker evt count : 772000hmaker evt count : 773000hmaker evt count : 774000hmaker evt count : 775000hmaker evt count : 776000hmaker evt count : 777000hmaker evt count : 778000hmaker evt count : 779000hmaker evt count : 780000hmaker evt count : 781000hmaker evt count : 782000hmaker evt count : 783000hmaker evt count : 784000hmaker evt count : 785000hmaker evt count : 786000hmaker evt count : 787000hmaker evt count : 788000hmaker evt count : 789000hmaker evt count : 790000hmaker evt count : 791000hmaker evt count : 792000hmaker evt count : 793000hmaker evt count : 794000hmaker evt count : 795000hmaker evt count : 796000hmaker evt count : 797000hmaker evt count : 798000hmaker evt count : 799000hmaker evt count : 800000hmaker evt count : 801000hmaker evt count : 802000hmaker evt count : 803000hmaker evt count : 804000hmaker evt count : 805000hmaker evt count : 806000hmaker evt count : 807000hmaker evt count : 808000hmaker evt count : 809000hmaker evt count : 810000hmaker evt count : 811000hmaker evt count : 812000hmaker evt count : 813000hmaker evt count : 814000hmaker evt count : 815000hmaker evt count : 816000hmaker evt count : 817000hmaker evt count : 818000hmaker evt count : 819000hmaker evt count : 820000hmaker evt count : 821000hmaker evt count : 822000hmaker evt count : 823000hmaker evt count : 824000hmaker evt count : 825000hmaker evt count : 826000hmaker evt count : 827000hmaker evt count : 828000hmaker evt count : 829000hmaker evt count : 830000hmaker evt count : 831000hmaker evt count : 832000hmaker evt count : 833000hmaker evt count : 834000hmaker evt count : 835000hmaker evt count : 836000hmaker evt count : 837000hmaker evt count : 838000hmaker evt count : 839000hmaker evt count : 840000hmaker evt count : 841000hmaker evt count : 842000hmaker evt count : 843000hmaker evt count : 844000hmaker evt count : 845000hmaker evt count : 846000hmaker evt count : 847000hmaker evt count : 848000hmaker evt count : 849000hmaker evt count : 850000hmaker evt count : 851000hmaker evt count : 852000hmaker evt count : 853000hmaker evt count : 854000hmaker evt count : 855000hmaker evt count : 856000hmaker evt count : 857000hmaker evt count : 858000hmaker evt count : 859000hmaker evt count : 860000hmaker evt count : 861000hmaker evt count : 862000hmaker evt count : 863000hmaker evt count : 864000hmaker evt count : 865000hmaker evt count : 866000hmaker evt count : 867000hmaker evt count : 868000hmaker evt count : 869000hmaker evt count : 870000hmaker evt count : 871000hmaker evt count : 872000hmaker evt count : 873000hmaker evt count : 874000hmaker evt count : 875000hmaker evt count : 876000hmaker evt count : 877000hmaker evt count : 878000hmaker evt count : 879000hmaker evt count : 880000hmaker evt count : 881000hmaker evt count : 882000hmaker evt count : 883000hmaker evt count : 884000hmaker evt count : 885000hmaker evt count : 886000hmaker evt count : 887000hmaker evt count : 888000hmaker evt count : 889000hmaker evt count : 890000hmaker evt count : 891000hmaker evt count : 892000hmaker evt count : 893000hmaker evt count : 894000hmaker evt count : 895000hmaker evt count : 896000hmaker evt count : 897000hmaker evt count : 898000hmaker evt count : 899000hmaker evt count : 900000hmaker evt count : 901000hmaker evt count : 902000hmaker evt count : 903000hmaker evt count : 904000hmaker evt count : 905000hmaker evt count : 906000hmaker evt count : 907000hmaker evt count : 908000hmaker evt count : 909000hmaker evt count : 910000hmaker evt count : 911000hmaker evt count : 912000hmaker evt count : 913000hmaker evt count : 914000hmaker evt count : 915000hmaker evt count : 916000hmaker evt count : 917000hmaker evt count : 918000hmaker evt count : 919000hmaker evt count : 920000hmaker evt count : 921000hmaker evt count : 922000hmaker evt count : 923000hmaker evt count : 924000hmaker evt count : 925000hmaker evt count : 926000hmaker evt count : 927000hmaker evt count : 928000hmaker evt count : 929000hmaker evt count : 930000hmaker evt count : 931000hmaker evt count : 932000hmaker evt count : 933000hmaker evt count : 934000hmaker evt count : 935000hmaker evt count : 936000hmaker evt count : 937000hmaker evt count : 938000hmaker evt count : 939000hmaker evt count : 940000hmaker evt count : 941000hmaker evt count : 942000hmaker evt count : 943000hmaker evt count : 944000hmaker evt count : 945000hmaker evt count : 946000hmaker evt count : 947000hmaker evt count : 948000hmaker evt count : 949000hmaker evt count : 950000hmaker evt count : 951000hmaker evt count : 952000hmaker evt count : 953000hmaker evt count : 954000hmaker evt count : 955000hmaker evt count : 956000hmaker evt count : 957000hmaker evt count : 958000hmaker evt count : 959000hmaker evt count : 960000hmaker evt count : 961000hmaker evt count : 962000hmaker evt count : 963000hmaker evt count : 964000hmaker evt count : 965000hmaker evt count : 966000hmaker evt count : 967000hmaker evt count : 968000hmaker evt count : 969000hmaker evt count : 970000hmaker evt count : 971000hmaker evt count : 972000hmaker evt count : 973000hmaker evt count : 974000hmaker evt count : 975000hmaker evt count : 976000hmaker evt count : 977000hmaker evt count : 978000hmaker evt count : 979000hmaker evt count : 980000hmaker evt count : 981000hmaker evt count : 982000hmaker evt count : 983000hmaker evt count : 984000hmaker evt count : 985000hmaker evt count : 986000hmaker evt count : 987000hmaker evt count : 988000hmaker evt count : 989000hmaker evt count : 990000hmaker evt count : 991000hmaker evt count : 992000hmaker evt count : 993000hmaker evt count : 994000hmaker evt count : 995000hmaker evt count : 996000hmaker evt count : 997000hmaker evt count : 998000hmaker evt count : 999000 -> now ploting
-    -> Plot resolution comp per trigger, per mu and ranges
-1D resolution comparisons -----
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/zeros_trueORfalse_mu140.png has been created
-resolution_all_mu140   in    20210429_for_CHEP/reso_comp/None
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_all_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/prediction_all_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_per_true_all_mu140.png has been created
-resolution_summary::Perf for OF with MaxFinder in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.02308985687702902120377 +/- 0.06023551084549966933013
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.1129999999999999893419 - 0.2109999999999998543387
-resolution_summary::Perf for Vanilla RNN in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.002410998490894756401959 +/- 0.04979776598823097005786
-resolution_summary::  -> max + 98%_up - 98%_do = 0.007000000000000117239551 + 0.096999999999999975131 - 0.1889999999999996127542
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/summary_all_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/summary_all_mu140.pdf has been created
-resolution_e0_mu140   in    20210429_for_CHEP/reso_comp/None
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_e0_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/prediction_e0_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_per_true_e0_mu140.png has been created
-resolution_summary::Perf for OF with MaxFinder in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.002431086633829202935803 +/- 0.01599341269634877923944
-resolution_summary::  -> max + 98%_up - 98%_do = 0.000999999999999889865876 + 0.003000000000000557776048 - 0.002999999999999669597628
-resolution_summary::Perf for Vanilla RNN in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.02051546926710068677324 +/- 0.01894177461678234891673
-resolution_summary::  -> max + 98%_up - 98%_do = 0.01900000000000012789769 + 0.04499999999999992894573 - 0.02099999999999990762944
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/summary_e0_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/summary_e0_mu140.pdf has been created
-resolution_0_0p240_mu140   in    20210429_for_CHEP/reso_comp/None
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/prediction_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_per_true_0_0p240_mu140.png has been created
-resolution_summary::Perf for OF with MaxFinder in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.01878805831622721092544 +/- 0.04198721984824069219933
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.08700000000000018829382 - 0.1709999999999998188116
-resolution_summary::Perf for Vanilla RNN in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.0002616309806718347544599 +/- 0.03945824907007317028373
-resolution_summary::  -> max + 98%_up - 98%_do = 0.008999999999999896971303 + 0.07299999999999995381472 - 0.1509999999999993569588
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/summary_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/summary_0_0p240_mu140.pdf has been created
-resolution_0p24_inf_mu140   in    20210429_for_CHEP/reso_comp/None
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/prediction_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_per_true_0p24_inf_mu140.png has been created
-resolution_summary::Perf for OF with MaxFinder in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.1174791416239974184421 +/- 0.1877311600530571500389
-resolution_summary::  -> max + 98%_up - 98%_do = -0.06899999999999995026201 + 0.2430000000000003268497 - 0.6029999999999997584155
-resolution_summary::Perf for Vanilla RNN in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.06105341152282464656231 +/- 0.138323870096855650047
-resolution_summary::  -> max + 98%_up - 98%_do = -0.04299999999999970512476 + 0.2589999999999998969713 - 0.4190000000000000390799
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/summary_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/summary_0p24_inf_mu140.pdf has been created
-resolution_1p0_inf_mu140   in    20210429_for_CHEP/reso_comp/None
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/prediction_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/resolution_per_true_1p0_inf_mu140.png has been created
-resolution_summary::Perf for OF with MaxFinder in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.07721265179372240050615 +/- 0.1837994421604880468379
-resolution_summary::  -> max + 98%_up - 98%_do = -0.04499999999999992894573 + 0.2130000000000000781597 - 0.7389999999999998792077
-resolution_summary::Perf for Vanilla RNN in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.00943062782150549255844 +/- 0.1075159073821265326432
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.2370000000000005435652 - 0.3309999999999999609201
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/summary_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/summary_1p0_inf_mu140.pdf has been created
-
-2D prediction VS truth and resolution VS truth
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/sequence_ofmax_eT_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/sequence_ofmax_eT_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/sequence_ofmax_eT_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/sequence_ofmax_eT_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/sequence_ofmax_eT_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/sequence_ofmax_eT_resolution_vs_gap_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/rnn_seq5_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/rnn_seq5_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/rnn_seq5_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/rnn_seq5_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/rnn_seq5_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/None/rnn_seq5_resolution_vs_gap_mu140.pdf has been created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/profiles_reso_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/profiles_E_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/profiles_unc_reso_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/profiles_unc_E_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/profiles_bt_mu140_all.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/profiles_bt_mu140_e0.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/profiles_bt_mu140_0_0p240.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/profiles_bt_mu140_0p24_inf.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/None/profiles_bt_mu140_1p0_inf.png has been created
-
-1D resolution comparisons -----
-resolution_all_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/resolution_all_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/prediction_all_mu140.png has been created
-Labels to replace size is: 12297829382473034411, should be: 9
-Labels to replace size is: 12297829382473034411, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.02475271527554949099748 +/- 0.04869040444325575117679
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.007000000000000117239551 - 0.1549999999999998046007
-resolution_summary::Perf for rnn_seq5 in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.002382100598350255903773 +/- 0.0437082453590411715294
-resolution_summary::  -> max + 98%_up - 98%_do = 0.007000000000000117239551 + 0.07499999999999973354647 - 0.1610000000000000319744
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_all_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_all_mu140.pdf has been created
-resolution_e0_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/resolution_e0_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/prediction_e0_mu140.png has been created
-Labels to replace size is: 12297829382473034411, should be: 9
-Labels to replace size is: 12297829382473034411, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0 +/- 0
-resolution_summary::  -> max + 98%_up - 98%_do = 0.000999999999999889865876 + -4.807000000000000383693 - 4.807000000000000383693
-resolution_summary::Perf for rnn_seq5 in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.01933842609191489467224 +/- 0.01697780701086885196682
-resolution_summary::  -> max + 98%_up - 98%_do = 0.01699999999999990407673 + 0.03900000000000014566126 - 0.01899999999999968380848
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_e0_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_e0_mu140.pdf has been created
-resolution_0_0p240_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/resolution_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/prediction_0_0p240_mu140.png has been created
-Labels to replace size is: 12297829382473034411, should be: 9
-Labels to replace size is: 12297829382473034411, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.02225115640224742050157 +/- 0.03628973695053293313517
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.007000000000000117239551 - 0.1409999999999995701216
-resolution_summary::Perf for rnn_seq5 in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.000570225062234973084814 +/- 0.03747925276340808437014
-resolution_summary::  -> max + 98%_up - 98%_do = 0.007000000000000117239551 + 0.06699999999999972644105 - 0.1430000000000002380318
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_0_0p240_mu140.pdf has been created
-resolution_0p24_inf_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/resolution_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/prediction_0p24_inf_mu140.png has been created
-Labels to replace size is: 12297829382473034411, should be: 9
-Labels to replace size is: 12297829382473034411, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.3435089756531252702665 +/- 0.1850609604057258661403
-resolution_summary::  -> max + 98%_up - 98%_do = -0.2989999999999999324984 + 0.05699999999999993960387 - 0.3430000000000004156675
-resolution_summary::Perf for rnn_seq5 in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.2332568068967313390516 +/- 0.1123782932341503837392
-resolution_summary::  -> max + 98%_up - 98%_do = -0.2330000000000000959233 + 0.2610000000000005648815 - 0.6829999999999993853805
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_0p24_inf_mu140.pdf has been created
-resolution_1p0_inf_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/resolution_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/prediction_1p0_inf_mu140.png has been created
-Labels to replace size is: 12297829382473034411, should be: 9
-Labels to replace size is: 12297829382473034411, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -1.751379346443434847913 +/- 0.9024693515130146614922
-resolution_summary::  -> max + 98%_up - 98%_do = -1.387000000000000010658 + -0.000999999999999889865876 - 2.760999999999999676703
-resolution_summary::Perf for rnn_seq5 in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.3402028477798074157512 +/- 0.3619423556560421029182
-resolution_summary::  -> max + 98%_up - 98%_do = -0.2810000000000001385558 + -0.000999999999999889865876 - 1.042999999999999705125
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/summary_1p0_inf_mu140.pdf has been created
-
-2D prediction VS truth and resolution VS truth
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/sequence_ofmax_eT_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/sequence_ofmax_eT_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/sequence_ofmax_eT_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/sequence_ofmax_eT_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/sequence_ofmax_eT_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/sequence_ofmax_eT_resolution_vs_gap_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/rnn_seq5_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/rnn_seq5_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/rnn_seq5_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/rnn_seq5_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/rnn_seq5_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/rnn_seq5_resolution_vs_gap_mu140.pdf has been created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/profiles_reso_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/profiles_E_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/profiles_unc_reso_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/profiles_unc_E_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/profiles_bt_mu140_all.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/profiles_bt_mu140_e0.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/profiles_bt_mu140_0_0p240.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/profiles_bt_mu140_0p24_inf.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isZero/profiles_bt_mu140_1p0_inf.png has been created
-
-1D resolution comparisons -----
-resolution_all_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/resolution_all_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/prediction_all_mu140.png has been created
-Labels to replace size is: 6148914691234491253, should be: 9
-Labels to replace size is: 6148914691234491253, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.007480957869995821796216 +/- 0.1231388834148330196916
-resolution_summary::  -> max + 98%_up - 98%_do = 0.008999999999999896971303 + 0.2269999999999998685496 - 0.4529999999999998472333
-resolution_summary::Perf for rnn_seq5 in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.002682254059936556821186 +/- 0.0884566631339187003924
-resolution_summary::  -> max + 98%_up - 98%_do = 0.01300000000000034461323 + 0.2029999999999998472333 - 0.2870000000000003659295
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_all_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_all_mu140.pdf has been created
-resolution_e0_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/resolution_e0_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/prediction_e0_mu140.png has been created
-Labels to replace size is: 6148914691234491253, should be: 9
-Labels to replace size is: 6148914691234491253, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.06112510753929593920741 +/- 0.05332599685763563662766
-resolution_summary::  -> max + 98%_up - 98%_do = 0.04899999999999993249844 + 0.003000000000000557776048 - 0.04899999999999993249844
-resolution_summary::Perf for rnn_seq5 in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.04893296610561338050305 +/- 0.03494226767204939437805
-resolution_summary::  -> max + 98%_up - 98%_do = 0.03900000000000014566126 + 0.07499999999999973354647 - 0.02900000000000035882408
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_e0_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_e0_mu140.pdf has been created
-resolution_0_0p240_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/resolution_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/prediction_0_0p240_mu140.png has been created
-Labels to replace size is: 6148914691234491253, should be: 9
-Labels to replace size is: 6148914691234491253, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.03320572876066420903163 +/- 0.07466813825705086171691
-resolution_summary::  -> max + 98%_up - 98%_do = 0.02900000000000035882408 + 0.1749999999999993782751 - 0.178999999999999825917
-resolution_summary::Perf for rnn_seq5 in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.0127506280360005046226 +/- 0.06063428750687199775271
-resolution_summary::  -> max + 98%_up - 98%_do = 0.01900000000000012789769 + 0.1369999999999995665689 - 0.1890000000000000568434
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_0_0p240_mu140.pdf has been created
-resolution_0p24_inf_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/resolution_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/prediction_0p24_inf_mu140.png has been created
-Labels to replace size is: 6148914691234491253, should be: 9
-Labels to replace size is: 6148914691234491253, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.07396263203293362842317 +/- 0.1539640151479419183378
-resolution_summary::  -> max + 98%_up - 98%_do = -0.04700000000000015276669 + 0.2210000000000005293543 - 0.6249999999999995559108
-resolution_summary::Perf for rnn_seq5 in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.02789986460902799114692 +/- 0.1165224691798880385374
-resolution_summary::  -> max + 98%_up - 98%_do = -0.02099999999999990762944 + 0.2510000000000003339551 - 0.3609999999999997655209
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_0p24_inf_mu140.pdf has been created
-resolution_1p0_inf_mu140   in    20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/resolution_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/prediction_1p0_inf_mu140.png has been created
-Labels to replace size is: 6148914691234491253, should be: 9
-Labels to replace size is: 6148914691234491253, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.07341883419561466561643 +/- 0.1601477157893430591784
-resolution_summary::  -> max + 98%_up - 98%_do = -0.04499999999999992894573 + 0.2130000000000000781597 - 0.6269999999999997797318
-resolution_summary::Perf for rnn_seq5 in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.008681067175571408750523 +/- 0.1050738150621402661189
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.2370000000000005435652 - 0.3309999999999999609201
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/summary_1p0_inf_mu140.pdf has been created
-
-2D prediction VS truth and resolution VS truth
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/sequence_ofmax_eT_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/sequence_ofmax_eT_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/sequence_ofmax_eT_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/sequence_ofmax_eT_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/sequence_ofmax_eT_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/sequence_ofmax_eT_resolution_vs_gap_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/rnn_seq5_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/rnn_seq5_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/rnn_seq5_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/rnn_seq5_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/rnn_seq5_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/rnn_seq5_resolution_vs_gap_mu140.pdf has been created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/profiles_reso_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/profiles_E_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/profiles_unc_reso_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/profiles_unc_E_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/profiles_bt_mu140_all.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/profiles_bt_mu140_e0.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/profiles_bt_mu140_0_0p240.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/profiles_bt_mu140_0p24_inf.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/sequence_ofmax_eT_isNonZero/profiles_bt_mu140_1p0_inf.png has been created
-
-1D resolution comparisons -----
-resolution_all_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/resolution_all_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/prediction_all_mu140.png has been created
-Labels to replace size is: 0, should be: 9
-Labels to replace size is: 0, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.02081383216758066548313 +/- 0.03981771295416484945928
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.007000000000000117239551 - 0.1370000000000000106581
-resolution_summary::Perf for rnn_seq5 in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.02084456745486002252066 +/- 0.03893505174388034451027
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.007000000000000117239551 - 0.134999999999999342748
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_all_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_all_mu140.pdf has been created
-resolution_e0_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/resolution_e0_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/prediction_e0_mu140.png has been created
-Labels to replace size is: 0, should be: 9
-Labels to replace size is: 0, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 5.714140342845281528164e-05 +/- 0.009396590631461969322924
-resolution_summary::  -> max + 98%_up - 98%_do = 0.000999999999999889865876 + -4.807000000000000383693 - 4.807000000000000383693
-resolution_summary::Perf for rnn_seq5 in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0 +/- 0
-resolution_summary::  -> max + 98%_up - 98%_do = 0.000999999999999889865876 + -4.807000000000000383693 - 4.807000000000000383693
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_e0_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_e0_mu140.pdf has been created
-resolution_0_0p240_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/resolution_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/prediction_0_0p240_mu140.png has been created
-Labels to replace size is: 0, should be: 9
-Labels to replace size is: 0, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.01943997396718577866381 +/- 0.03368539769575112918787
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.007000000000000117239551 - 0.122999999999999776179
-resolution_summary::Perf for rnn_seq5 in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.01947084885679991814178 +/- 0.03263377251991646937901
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.007000000000000117239551 - 0.122999999999999776179
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_0_0p240_mu140.pdf has been created
-resolution_0p24_inf_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/resolution_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/prediction_0p24_inf_mu140.png has been created
-Labels to replace size is: 0, should be: 9
-Labels to replace size is: 0, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.3232867566786621349451 +/- 0.09443140633595582811299
-resolution_summary::  -> max + 98%_up - 98%_do = -0.2949999999999999289457 + 0.05299999999999993605115 - 0.1609999999999995878852
-resolution_summary::Perf for rnn_seq5 in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.3232867566786621349451 +/- 0.09443140633595582811299
-resolution_summary::  -> max + 98%_up - 98%_do = -0.2949999999999999289457 + 0.05299999999999993605115 - 0.1609999999999995878852
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_0p24_inf_mu140.pdf has been created
-resolution_1p0_inf_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/resolution_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/prediction_1p0_inf_mu140.png has been created
-Labels to replace size is: 0, should be: 9
-Labels to replace size is: 0, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = 0 +/- 0
-resolution_summary::  -> max + 98%_up - 98%_do = -5.000999999999999445777 + 0.1949999999999993960387 - -0.1949999999999993960387
-resolution_summary::Perf for rnn_seq5 in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = 0 +/- 0
-resolution_summary::  -> max + 98%_up - 98%_do = -5.000999999999999445777 + 0.1949999999999993960387 - -0.1949999999999993960387
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/summary_1p0_inf_mu140.pdf has been created
-
-2D prediction VS truth and resolution VS truth
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/sequence_ofmax_eT_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/sequence_ofmax_eT_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/sequence_ofmax_eT_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/sequence_ofmax_eT_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/sequence_ofmax_eT_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/sequence_ofmax_eT_resolution_vs_gap_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/rnn_seq5_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/rnn_seq5_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/rnn_seq5_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/rnn_seq5_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/rnn_seq5_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/rnn_seq5_resolution_vs_gap_mu140.pdf has been created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/profiles_reso_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/profiles_E_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/profiles_unc_reso_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/profiles_unc_E_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/profiles_bt_mu140_all.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/profiles_bt_mu140_e0.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/profiles_bt_mu140_0_0p240.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/profiles_bt_mu140_0p24_inf.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isZero/profiles_bt_mu140_1p0_inf.png has been created
-
-1D resolution comparisons -----
-resolution_all_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/resolution_all_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/prediction_all_mu140.png has been created
-Labels to replace size is: 5844330524799570162, should be: 9
-Labels to replace size is: 5844330524799570162, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.02344682372505231537918 +/- 0.06283132729377355341072
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.1209999999999999964473 - 0.2149999999999994138022
-resolution_summary::Perf for rnn_seq5 in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.0004800796996427417542841 +/- 0.05068864625738235540897
-resolution_summary::  -> max + 98%_up - 98%_do = 0.01100000000000012079227 + 0.09700000000000041922021 - 0.1929999999999996163069
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_all_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_all_mu140.pdf has been created
-resolution_e0_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/resolution_e0_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/prediction_e0_mu140.png has been created
-Labels to replace size is: 5844330524799570162, should be: 9
-Labels to replace size is: 5844330524799570162, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.002860980302239549306897 +/- 0.01687942468146185620581
-resolution_summary::  -> max + 98%_up - 98%_do = 0.000999999999999889865876 + 0.003000000000000557776048 - 0.002999999999999669597628
-resolution_summary::Perf for rnn_seq5 in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.02423058039496137419655 +/- 0.01826867104502654173825
-resolution_summary::  -> max + 98%_up - 98%_do = 0.01900000000000012789769 + 0.0510000000000001563194 - 0.02099999999999990762944
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_e0_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_e0_mu140.pdf has been created
-resolution_0_0p240_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/resolution_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/prediction_0_0p240_mu140.png has been created
-Labels to replace size is: 5844330524799570162, should be: 9
-Labels to replace size is: 5844330524799570162, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.0186809506318517740131 +/- 0.04319791658985788762593
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.08700000000000018829382 - 0.1829999999999993853805
-resolution_summary::Perf for rnn_seq5 in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.003503611206719948242133 +/- 0.03953862708368723749564
-resolution_summary::  -> max + 98%_up - 98%_do = 0.01100000000000012079227 + 0.07500000000000017763568 - 0.150999999999999801048
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_0_0p240_mu140.pdf has been created
-resolution_0p24_inf_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/resolution_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/prediction_0p24_inf_mu140.png has been created
-Labels to replace size is: 5844330524799570162, should be: 9
-Labels to replace size is: 5844330524799570162, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.1145434797734212889475 +/- 0.1870981062270771488887
-resolution_summary::  -> max + 98%_up - 98%_do = -0.06699999999999972644105 + 0.2410000000000001030287 - 0.6049999999999999822364
-resolution_summary::Perf for rnn_seq5 in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.05731288701833300164301 +/- 0.1352195853715655315952
-resolution_summary::  -> max + 98%_up - 98%_do = -0.04099999999999992539301 + 0.2570000000000001172396 - 0.4110000000000000319744
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_0p24_inf_mu140.pdf has been created
-resolution_1p0_inf_mu140   in    20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/resolution_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/prediction_1p0_inf_mu140.png has been created
-Labels to replace size is: 5844330524799570162, should be: 9
-Labels to replace size is: 5844330524799570162, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.07721265179372240050615 +/- 0.1837994421604880468379
-resolution_summary::  -> max + 98%_up - 98%_do = -0.04499999999999992894573 + 0.2130000000000000781597 - 0.7389999999999998792077
-resolution_summary::Perf for rnn_seq5 in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.00943062782150549255844 +/- 0.1075159073821265326432
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.2370000000000005435652 - 0.3309999999999999609201
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/summary_1p0_inf_mu140.pdf has been created
-
-2D prediction VS truth and resolution VS truth
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/sequence_ofmax_eT_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/sequence_ofmax_eT_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/sequence_ofmax_eT_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/sequence_ofmax_eT_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/sequence_ofmax_eT_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/sequence_ofmax_eT_resolution_vs_gap_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/rnn_seq5_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/rnn_seq5_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/rnn_seq5_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/rnn_seq5_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/rnn_seq5_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/rnn_seq5_resolution_vs_gap_mu140.pdf has been created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/profiles_reso_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/profiles_E_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/profiles_unc_reso_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/profiles_unc_E_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/profiles_bt_mu140_all.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/profiles_bt_mu140_e0.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/profiles_bt_mu140_0_0p240.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/profiles_bt_mu140_0p24_inf.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/rnn_seq5_isNonZero/profiles_bt_mu140_1p0_inf.png has been created
-
-1D resolution comparisons -----
-resolution_all_mu140   in    20210429_for_CHEP/reso_comp/AllNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/resolution_all_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/prediction_all_mu140.png has been created
-Labels to replace size is: 1, should be: 9
-Labels to replace size is: 1, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.007524374751409095875287 +/- 0.1227467494777127465788
-resolution_summary::  -> max + 98%_up - 98%_do = 0.008999999999999896971303 + 0.2269999999999998685496 - 0.4529999999999998472333
-resolution_summary::Perf for rnn_seq5 in summary_all_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.002682289385303277158557 +/- 0.08845758147757769307429
-resolution_summary::  -> max + 98%_up - 98%_do = 0.01300000000000034461323 + 0.2029999999999998472333 - 0.2870000000000003659295
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/summary_all_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/summary_all_mu140.pdf has been created
-resolution_e0_mu140   in    20210429_for_CHEP/reso_comp/AllNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/resolution_e0_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/prediction_e0_mu140.png has been created
-Labels to replace size is: 1, should be: 9
-Labels to replace size is: 1, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.06091350932638228687921 +/- 0.05029889794433060196122
-resolution_summary::  -> max + 98%_up - 98%_do = 0.04899999999999993249844 + 0.003000000000000557776048 - 0.04899999999999993249844
-resolution_summary::Perf for rnn_seq5 in summary_e0_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.04893994257640117695463 +/- 0.03493987288168444449443
-resolution_summary::  -> max + 98%_up - 98%_do = 0.03900000000000014566126 + 0.07499999999999973354647 - 0.02900000000000035882408
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/summary_e0_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/summary_e0_mu140.pdf has been created
-resolution_0_0p240_mu140   in    20210429_for_CHEP/reso_comp/AllNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/resolution_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/prediction_0_0p240_mu140.png has been created
-Labels to replace size is: 1, should be: 9
-Labels to replace size is: 1, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.03313710245794429520849 +/- 0.07365607151182468337325
-resolution_summary::  -> max + 98%_up - 98%_do = 0.02900000000000035882408 + 0.1749999999999993782751 - 0.178999999999999825917
-resolution_summary::Perf for rnn_seq5 in summary_0_0p240_mu140 : 
-resolution_summary::  -> mean pm stdev = 0.01275108790656689049248 +/- 0.06063525041423148409514
-resolution_summary::  -> max + 98%_up - 98%_do = 0.01900000000000012789769 + 0.1369999999999995665689 - 0.1890000000000000568434
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/summary_0_0p240_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/summary_0_0p240_mu140.pdf has been created
-resolution_0p24_inf_mu140   in    20210429_for_CHEP/reso_comp/AllNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/resolution_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/prediction_0p24_inf_mu140.png has been created
-Labels to replace size is: 1, should be: 9
-Labels to replace size is: 1, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.07396263203293362842317 +/- 0.1539640151479419183378
-resolution_summary::  -> max + 98%_up - 98%_do = -0.04700000000000015276669 + 0.2210000000000005293543 - 0.6249999999999995559108
-resolution_summary::Perf for rnn_seq5 in summary_0p24_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.02789986460902799114692 +/- 0.1165224691798880385374
-resolution_summary::  -> max + 98%_up - 98%_do = -0.02099999999999990762944 + 0.2510000000000003339551 - 0.3609999999999997655209
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/summary_0p24_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/summary_0p24_inf_mu140.pdf has been created
-resolution_1p0_inf_mu140   in    20210429_for_CHEP/reso_comp/AllNonZero
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/resolution_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/prediction_1p0_inf_mu140.png has been created
-Labels to replace size is: 1, should be: 9
-Labels to replace size is: 1, should be: 9
-resolution_summary::Perf for sequence_ofmax_eT in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.07341883419561466561643 +/- 0.1601477157893430591784
-resolution_summary::  -> max + 98%_up - 98%_do = -0.04499999999999992894573 + 0.2130000000000000781597 - 0.6269999999999997797318
-resolution_summary::Perf for rnn_seq5 in summary_1p0_inf_mu140 : 
-resolution_summary::  -> mean pm stdev = -0.008681067175571408750523 +/- 0.1050738150621402661189
-resolution_summary::  -> max + 98%_up - 98%_do = -0.007000000000000117239551 + 0.2370000000000005435652 - 0.3309999999999999609201
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/summary_1p0_inf_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/summary_1p0_inf_mu140.pdf has been created
-
-2D prediction VS truth and resolution VS truth
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/sequence_ofmax_eT_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/sequence_ofmax_eT_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/sequence_ofmax_eT_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/sequence_ofmax_eT_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/sequence_ofmax_eT_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/sequence_ofmax_eT_resolution_vs_gap_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/rnn_seq5_prediction_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/rnn_seq5_prediction_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/rnn_seq5_resolution_vs_e_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/rnn_seq5_resolution_vs_e_mu140.pdf has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/rnn_seq5_resolution_vs_gap_mu140.png has been created
-Info in <TCanvas::Print>: pdf file 20210429_for_CHEP/reso_comp/AllNonZero/rnn_seq5_resolution_vs_gap_mu140.pdf has been created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Warning in <Sumw2>: Sum of squares of profile bin weights structure already created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/profiles_reso_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/profiles_E_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/profiles_unc_reso_mu140.png has been created
-Warning in <TROOT::Append>: Replacing existing TH1: sequence_ofmax_eT_profile_err (Potential memory leak).
-Warning in <TROOT::Append>: Replacing existing TH1: rnn_seq5_profile_err (Potential memory leak).
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/profiles_unc_E_mu140.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/profiles_bt_mu140_all.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/profiles_bt_mu140_e0.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/profiles_bt_mu140_0_0p240.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/profiles_bt_mu140_0p24_inf.png has been created
-Info in <TCanvas::Print>: png file 20210429_for_CHEP/reso_comp/AllNonZero/profiles_bt_mu140_1p0_inf.png has been created
-
- -> some more analysis on plot
-make_zero_ana::start
-Table for mu = #mu = 140
-                   Method |   Pred@mean |    Pred@max |    85pc preds |    95pc preds
-        sequence_ofmax_eT |    0.061107 |    0.019560 |      0.105041 |      0.158015
-                 rnn_seq5 |    0.024355 |    0.017152 |      0.032804 |      0.052067
-
-make_zero_ana::end
-0, 0: sequence_ofmax_eT
-    43585
-0, 1: rnn_seq5
-    43588
-1, 0: sequence_ofmax_eT
-    903713
-1, 1: rnn_seq5
-    903713
-2, 0: sequence_ofmax_eT
-    96276
-2, 1: rnn_seq5
-    96276
-3, 0: sequence_ofmax_eT
-    135573
-3, 1: rnn_seq5
-    135573
-4, 0: sequence_ofmax_eT
-    864416
-4, 1: rnn_seq5
-    864416
-5, 0: sequence_ofmax_eT
-    96274
-5, 1: rnn_seq5
-    96274
-bye bye ...

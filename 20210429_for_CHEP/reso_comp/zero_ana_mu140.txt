@@ -1,3 +1,0 @@
-                   Method |   Pred@mean |    Pred@max |    85pc preds |    95pc preds
-        sequence_ofmax_eT |    0.061107 |    0.019560 |      0.105041 |      0.158015
-                 rnn_seq5 |    0.024355 |    0.017152 |      0.032804 |      0.052067

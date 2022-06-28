@@ -34,14 +34,14 @@ output = 1
 
 nbr_batch = 64
 nbr_epoch = 200
-lr=0.0001
+lr=0.001
 
 time_step = 5
 nbr_conv_epoch = 100 #number of epochs for the conversion 
 
 weight_decay=0.00000001
-patience_es = 12
-patience_rlr = 3
+patience_es = 7
+patience_rlr = 5
 delta = 0.00000001
 regularizer = l2
 
@@ -72,10 +72,11 @@ bits_range = 7
 def models_path(v) : return f"tests/models/optimized_model.h5"      #optimized model = model_decay<class 'keras.regularizers.L2'>=1e-07_v0
 
 #path of the qconverted models
-def qmodels_path(i,v,k): return f"tests/qmodels/qmodels_conv_patiencES={patience_es}_patienceRLR={patience_rlr}_mindelta{delta},rkernel<{bit_lenghts(i)},{integer}>_rest={rest_array[k]}_v{version(v)}.h5"
+def qmodels_path(i,v,k): return f"tests/qmodels/qmodels_conv_lr={lr}_patiencES={patience_es}_patienceRLR={patience_rlr}_mindelta{delta},rkernel<{bit_lenghts(i)},{integer}>_allrest={rest_array[k]}_v{version(v)}.h5"
 
 #path of the qconverted models
-def qhist_path(i,v,k): return f"tests/qhist/qmodels_conv_patiencES={patience_es}_patienceRLR={patience_rlr}_mindelta{delta},rkernel<{bit_lenghts(i)},{integer}>_rest={rest_array[k]}_v{version(v)}.pkl"
+def qhist_path(i,v,k): return f"tests/qhist/qmodels_conv_lr={lr}_patiencES={patience_es}_patienceRLR={patience_rlr}_mindelta{delta},rkernel<{bit_lenghts(i)},{integer}>_allrest={rest_array[k]}_v{version(v)}.pkl"
+
 
 #path of the qtrained models
 def qtrained_models_path(j, i, v ): return f"tests/qmodels_test/qtrained/qmodels_units={units(j)}_epoch={nbr_epoch}_patiencES={patience_es}_patienceRLR={patience_rlr}_delta={delta}_cp,<{bit_lenghts(i)},{integer}>v{version(v)}.h5"
@@ -109,27 +110,41 @@ def quantized_conv_model (bits, units_parameter, model_to_convert,k):
 
     reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_loss', factor=0.5,
                                 patience= patience_rlr, min_lr=0.000001, min_delta=delta, verbose=1)
-    qr_model = Sequential()
 
-    qr_model.add(QSimpleRNN(units_parameter,
-                        input_dim= 1,
-                        activation='relu',
-                        kernel_quantizer=quantized_bits(**rest_bit_width),
-                        recurrent_quantizer=quantized_bits(**bits),
-                        bias_quantizer=quantized_bits(**rest_bit_width)    
-                        ))
-       
-    qr_model.add(QDense(output, 
-                        activation='relu',
-                        kernel_quantizer=quantized_bits(**dense_bit_width),
-                        bias_quantizer=quantized_bits(**dense_bit_width) ))
+    val_loss = 1
 
-    qr_model.compile(loss="mse", optimizer=Adam(lr))
-    
+
+    # restart training if the model does not start converging by the end of first epoch
+    while val_loss > 0.0005:
+        print("testing new weights")
+        qr_model = Sequential()
+
+        qr_model.add(QSimpleRNN(units_parameter,
+                            input_dim= 1,
+                            activation='relu',
+                            kernel_quantizer=quantized_bits(**rest_bit_width),
+                            recurrent_quantizer=quantized_bits(**bits),
+                            bias_quantizer=quantized_bits(**rest_bit_width)    
+                            ))
+        
+        qr_model.add(QDense(output, 
+                            activation='relu',
+                            kernel_quantizer=quantized_bits(**rest_bit_width),
+                            bias_quantizer=quantized_bits(**rest_bit_width) ))
+
+        qr_model.compile(loss="mse", optimizer=Adam(lr))
+        
+        #using the weight from the classic network as a base
+        qr_model.set_weights(model_to_convert.get_weights())
+
+        history = qr_model.fit(x, y, validation_data= (x_val,y_val),epochs = 1, batch_size=nbr_batch, shuffle=True, callbacks=[model_checkpoint_callback, early_stopping, reduce_lr])
+        
+        val_loss = history.history['val_loss'][0]
+
+
     qr_model.summary()
-
-    #using the weight from the classic network as a base
-    qr_model.set_weights(model_to_convert.get_weights())
+        
+    
     hist = qr_model.fit(x, y, validation_data= (x_val,y_val),epochs = nbr_conv_epoch, batch_size=nbr_batch, shuffle=True, callbacks=[model_checkpoint_callback, early_stopping, reduce_lr])
     lr_change = []
     for i in range (len(hist.history['lr'])-1):
@@ -154,7 +169,7 @@ def qmodel_conv_training ():
     qhist = []
     for i in range(bits_range):
         bits_parameter = bit_width(i)
-        k=2
+        k=1
         v=2
         if (os.path.exists(qmodels_path(i,v,k))==False):
             qmodel = quantized_conv_model(bits_parameter, 8, tf.keras.models.load_model(models_path(0)),k)

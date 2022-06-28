@@ -68,9 +68,11 @@ std::vector < std::vector < TString >> pred_names_labels = {{"sequence_ofmax_eT"
                                                             {"rnn_patience=12", "patience=12"},
                                                             {"rnn_patience=16", "patience=16"},
                                                             {"rnn_patience=20", "patience=20"},
-                                                            {"rnn_ref", "ref"},
+                                                            {"ref model", "reference model"},
                                                             {"time step 30", "time step = 30"},
-                                                            {"rnn_64", "Batch size = 64"}};
+                                                            {"rnn_64", "Batch size = 64"},
+                                                            {"rnn_PTQ","PTQ <16,3>"},
+                                                            {"rnn_rkernel","rkernel<6,0> rest<12,0>"}};
 
 
 // Energy ranges for plots
@@ -1875,10 +1877,12 @@ int main(int argc, char* argv[])
 
     // // alg_comp options -- Thomas' stuffs for now ... to be made configurable + requires to change mu vec global def ...
 
-    std::vector < TString > infiles = {"/atlas/bonnet/Desktop/code/internship_CPPM/timestep.root"};
+    std::vector < TString > infiles = {"/atlas/bonnet/Desktop/code/internship_CPPM/ROOT/best_model_compare.root"};
 
     std::vector < TString > pred_names = {"sequence_ofmax_eT",
-                                          "time step 30"};
+                                            "rnn_seq5",
+                                            "rnn_PTQ",
+                                            "rnn_rkernel"};
     std::vector < TString > mus = {"mu140"};
 
     unsigned int init_bcid = 1000000;
